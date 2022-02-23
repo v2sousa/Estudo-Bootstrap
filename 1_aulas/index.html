@@ -164,6 +164,49 @@
           <label for="foto" class="form-label"> Multiplos Arquivos </label>
           <input type="file" class="form-control" id="fotos" multiple>
         </div>
+      </form>
+    </div>
+
+    <!-- OUTROS ELEMENTOS -->
+    <div class="col-4 m-4">
+      <h2> Outros Inputs </h2>
+      <form>
+        <!--data list-->
+        <div class="mb-4">
+          <label for="cidades" class="form-label"> Selecione uma Cidade </label>
+          <input class="form-control" id="cidades" list="datalistOptions" placeholder="Escolha uma cidade">
+          <datalist id="datalistOptions">
+            <option value="São Paulo">
+            <option value="Rio de Janeiro">
+            <option value="Florianopolis">
+            <option value="Porto Alegre">
+          </datalist>
+        </div>
+
+        <!-- COR -->
+        <div class="mb-4">
+          <label for="cor" class="form-label"> Selecione a Cor </label>
+          <input type="color" class="form-control form-control-color" id="cor" value="#000" title="Escolha a Cor"> <!--O title funcionará c/ placeholder-->
+        </div>
+        <!-- SELECT COM BOOTSTRAP -->
+        <div class="mb-4">
+          <select class="form-select" name="opcoes" id="opcoes">
+            <option selected> Selecione uma Opção </option><!--O selected funciona como um placeholder-->
+            <option value="1"> Primeira </option>
+            <option value="2"> Segunda </option>
+            <option value="3"> Terceira </option>
+          </select>
+        </div>
+        <div class="mb-4">
+          <label for="opcoes" class="form-label"> Selecione as suas opções: </label>
+          <select class="form-select" multiple>
+            <option value="1"> MAçã </option>
+            <option value="2"> Banana </option>
+            <option value="3"> Laranja </option>
+          </select>
+        </div>
+        
+        <!-- Checkbox e Radio Button -->
 
       </form>
     </div>
