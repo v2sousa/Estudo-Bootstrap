@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BootStrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- BootStrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- Link Favicon-->
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Link JavaScript-->
+    <!--O atributo defer, faz c/ q/ o JS seja executado logo após o html carregar-->
+    <script src="js/scripts.js" defer></script>
+    <title> Validações </title>
+</head>
+
+<body>
+    <!-- Validação Bootstrep -->
+    <div class="col-12 m-4">
+        <h1> Validações </h1>
+        <div class="container">
+            <div class="row justify-content-center m-4">
+            <div class="col-6">
+                <h2> Faça o Login para Continuar (com bootstrap) </h2>
+                <form class="row needs-validation" novalidate> <!--Atributo de validação, o Argumento novalidate adiciona a validação do bootstrap-->
+                    <div class="col-12 mb-4">
+                        <label for="email" class="form-label"> E-mail: </label>
+                        <input type="email" class="form-control" id="email" placeholder=" Digite seu E-mail" required>
+                        <!--required: atributo que é necessário o preenchimento-->
+                        <div class="valid-feedback"> Ok </div>
+                    </div>
+                    <div class="col-12 mb-4">
+                        <label for="password" class="form-label"> Senha: </label>
+                        <input type="password" class="form-control" id="password" placeholder=" Digite sua Senha" required>
+                        <!--required: atributo que é necessário o preenchimento-->
+                        <div class="valid-feedback"> Ok </div>
+                    </div>
+                    <div class="col-12 mb-4">
+                        <button type="submit" class="btn btn-primary"> Entrar </button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- Validação no HTML -->
+    <div class="col-12 m-4">
+        <div class="container">
+            <div class="row justify-content-center m-4">
+            <div class="col-6">
+                <h2> Faça o Login para Continuar (com HTML) </h2>
+                <form class="row"> <!--Atributo de validação, o Argumento novalidate adiciona a validação do bootstrap-->
+                    <div class="col-12 mb-4">
+                        <label for="email" class="form-label"> E-mail: </label>
+                        <input type="email" class="form-control" id="email" placeholder=" Digite seu E-mail" required>
+                        <!--required: atributo que é necessário o preenchimento-->
+                    </div>
+
+                    <div class="col-12 mb-4">
+                        <label for="password" class="form-label"> Senha: </label>
+                        <input type="password" class="form-control" id="password" placeholder=" Digite sua Senha" required minlength="5">
+                        <!--required: atributo que faz necessário o preenchimento, minlength: uma qtde minima de caracteres-->
+                    </div>
+
+                    <div class="col-12 mb-4">
+                        <button type="submit" class="btn btn-primary"> Entrar </button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
