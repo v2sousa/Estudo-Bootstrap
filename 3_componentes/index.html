@@ -15,8 +15,31 @@
     <title> Componentes </title>
 </head>
 <body>
-    <!-- Accordion -->
-    <h1> Componentes com bootstrap </h1>
+    <!-- Carrosel -->
+    <h1> Componentes com Bootstrap </h1>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imagens/cachorro.jfif" class="d-block w-100" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="imagens/cavalo.jfif" class="d-block w-100" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="imagens/crocodilo.jfif" class="d-block w-100" alt="">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+  
+      <!-- Accordion -->
     <div class="col-4 m-4">
         <h2> Accordion </h2>
         <div class="accordion" id="accordion">
@@ -33,6 +56,7 @@
                     </div>
                 </div>
             </div>
+
             <!--Item 2-->
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingTwo">
@@ -46,6 +70,7 @@
                     </div>
                 </div>
             </div>
+
             <!--Item 3-->
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingTree">
@@ -59,7 +84,57 @@
                     </div>
                 </div>
             </div>
+
+            <!--Item 4-->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFor">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFor" aria-expanded="true" aria-controls="collapseFor">
+                        item 4
+                    </button>
+                </h2>
+                <div class="accordion-collapse collapse" id="collapseFor" aria-labelledby="headingTree" data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <p> Este é o item 4 e sua descrição!</p>
+                        <p> Este é o item 4 e sua descrição!</p>
+                        <p> Este é o item 4 e sua descrição!</p>
+                        <p> Este é o item 4 e sua descrição!</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
+    <div class="col-4 md-4">
+        <div class="box-container">
+            <p> Logo </p>
+        </div>
+    </div>
+    <!-- Cards -->
+    <div class="card-group">
+        <div class="card">
+          <img src="#" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"> Cartão 1 Esquerda </h5>
+            <p class="card-text"> This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"> <small class="text-muted"> Last updated 3 mins ago </small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="#" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"> Cartão Centro </h5>
+            <p class="card-text"> This card has supporting text below as a natural lead-in to additional content. </p>
+            <p class="card-text"><small class="text-muted"> Last updated 3 mins ago </small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="#" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"> Cartão Direita </h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
 </body>
 </html>
